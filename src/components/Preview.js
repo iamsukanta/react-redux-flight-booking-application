@@ -4,6 +4,7 @@ export default function Preview() {
   const bookings = useSelector((state) => state);
   const dispatch = useDispatch();
 
+  // handle delete
   const handleDelete = (id) => {
     dispatch(deleteFlight(id))
   }
